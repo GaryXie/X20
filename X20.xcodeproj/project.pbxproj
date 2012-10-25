@@ -27,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		187E3EE516399DF100DBEF10 /* X20Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = X20Core.h; path = XLib/XCore/X20Core.h; sourceTree = "<group>"; };
 		18AEFF4416359EC7005EF160 /* X20.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = X20.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AEFF4816359EC7005EF160 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18AEFF4A16359EC7005EF160 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -69,6 +70,7 @@
 		18AEFF3916359EC7005EF160 = {
 			isa = PBXGroup;
 			children = (
+				18AEFF7916359FCE005EF160 /* XLib */,
 				18AEFF4E16359EC7005EF160 /* X20 */,
 				18AEFF4716359EC7005EF160 /* Frameworks */,
 				18AEFF4516359EC7005EF160 /* Products */,
@@ -125,6 +127,22 @@
 				18AEFF5E16359EC7005EF160 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18AEFF7916359FCE005EF160 /* XLib */ = {
+			isa = PBXGroup;
+			children = (
+				18AEFF7A1635A003005EF160 /* XCore */,
+			);
+			name = XLib;
+			sourceTree = "<group>";
+		};
+		18AEFF7A1635A003005EF160 /* XCore */ = {
+			isa = PBXGroup;
+			children = (
+				187E3EE516399DF100DBEF10 /* X20Core.h */,
+			);
+			name = XCore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +342,7 @@
 				18AEFF7816359EC7005EF160 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
