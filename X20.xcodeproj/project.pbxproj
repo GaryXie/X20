@@ -51,6 +51,7 @@
 		18AEFF6C16359EC7005EF160 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		18AEFF6F16359EC7005EF160 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		18AEFF7216359EC7005EF160 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		2E9B3FC0163A656200954BA2 /* X20CoreAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = X20CoreAdditions.h; path = XLib/XCore/X20CoreAdditions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				187E3EE516399DF100DBEF10 /* X20Core.h */,
+				2E9B3FC0163A656200954BA2 /* X20CoreAdditions.h */,
 			);
 			name = XCore;
 			sourceTree = "<group>";
