@@ -50,6 +50,7 @@
 		18AEFF6C16359EC7005EF160 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		18AEFF6F16359EC7005EF160 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		18AEFF7216359EC7005EF160 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		2E9B3FD6163A7B3200954BA2 /* X20Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = X20Core.h; path = XLib/XCore/Headers/X20Core.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				2E9B3FC2163A671100954BA2 /* Global */,
+				2E9B3FD6163A7B3200954BA2 /* X20Core.h */,
 			);
 			name = XCore;
 			sourceTree = "<group>";
