@@ -51,6 +51,8 @@
 		18AEFF6F16359EC7005EF160 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		18AEFF7216359EC7005EF160 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
 		2E9B3FD6163A7B3200954BA2 /* X20Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = X20Core.h; path = XLib/XCore/Headers/X20Core.h; sourceTree = "<group>"; };
+		2E9B3FD7163A7C2600954BA2 /* X20CoreAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = X20CoreAdditions.h; path = XLib/XCore/Headers/X20CoreAdditions.h; sourceTree = "<group>"; };
+		2E9B3FD8163A7C4300954BA2 /* XDebugFlags.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XDebugFlags.h; path = XLib/XCore/Headers/XDebugFlags.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,8 @@
 			children = (
 				2E9B3FC2163A671100954BA2 /* Global */,
 				2E9B3FD6163A7B3200954BA2 /* X20Core.h */,
+				2E9B3FD7163A7C2600954BA2 /* X20CoreAdditions.h */,
+				2E9B3FD8163A7C4300954BA2 /* XDebugFlags.h */,
 			);
 			name = XCore;
 			sourceTree = "<group>";
