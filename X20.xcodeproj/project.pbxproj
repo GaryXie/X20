@@ -24,6 +24,8 @@
 		18AEFF6D16359EC7005EF160 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AEFF6C16359EC7005EF160 /* second@2x.png */; };
 		18AEFF7016359EC7005EF160 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AEFF6E16359EC7005EF160 /* FirstViewController.xib */; };
 		18AEFF7316359EC7005EF160 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AEFF7116359EC7005EF160 /* SecondViewController.xib */; };
+		2E9B3FDB163A7DB100954BA2 /* X20Version.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9B3FDA163A7DB100954BA2 /* X20Version.m */; };
+		2E9B3FDE163A7F4200954BA2 /* X20.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9B3FDD163A7F4200954BA2 /* X20.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,11 @@
 		2E9B3FD6163A7B3200954BA2 /* X20Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = X20Core.h; path = XLib/XCore/Headers/X20Core.h; sourceTree = "<group>"; };
 		2E9B3FD7163A7C2600954BA2 /* X20CoreAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = X20CoreAdditions.h; path = XLib/XCore/Headers/X20CoreAdditions.h; sourceTree = "<group>"; };
 		2E9B3FD8163A7C4300954BA2 /* XDebugFlags.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XDebugFlags.h; path = XLib/XCore/Headers/XDebugFlags.h; sourceTree = "<group>"; };
+		2E9B3FD9163A7DB100954BA2 /* X20Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = X20Version.h; path = XLib/XCore/Global/X20Version.h; sourceTree = "<group>"; };
+		2E9B3FDA163A7DB100954BA2 /* X20Version.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = X20Version.m; path = XLib/XCore/Global/X20Version.m; sourceTree = "<group>"; };
+		2E9B3FDC163A7F4200954BA2 /* X20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = X20.h; path = XLib/XCore/Global/X20.h; sourceTree = "<group>"; };
+		2E9B3FDD163A7F4200954BA2 /* X20.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = X20.m; path = XLib/XCore/Global/X20.m; sourceTree = "<group>"; };
+		2E9B3FDF163A80F700954BA2 /* XCorePreprocessorMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XCorePreprocessorMacros.h; path = XLib/XCore/Headers/XCorePreprocessorMacros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +160,11 @@
 		2E9B3FC2163A671100954BA2 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				2E9B3FDF163A80F700954BA2 /* XCorePreprocessorMacros.h */,
+				2E9B3FD9163A7DB100954BA2 /* X20Version.h */,
+				2E9B3FDA163A7DB100954BA2 /* X20Version.m */,
+				2E9B3FDC163A7F4200954BA2 /* X20.h */,
+				2E9B3FDD163A7F4200954BA2 /* X20.m */,
 			);
 			name = Global;
 			sourceTree = "<group>";
@@ -232,6 +244,8 @@
 				18AEFF5916359EC7005EF160 /* AppDelegate.m in Sources */,
 				18AEFF6216359EC7005EF160 /* FirstViewController.m in Sources */,
 				18AEFF6916359EC7005EF160 /* SecondViewController.m in Sources */,
+				2E9B3FDB163A7DB100954BA2 /* X20Version.m in Sources */,
+				2E9B3FDE163A7F4200954BA2 /* X20.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
