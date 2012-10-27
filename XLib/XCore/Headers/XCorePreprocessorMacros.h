@@ -24,34 +24,28 @@
 
 
 #pragma -Flags
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// Flags
-
-/**
- * For when the flag might be a set of bits, this will ensure that the exact set of bits in
- * the flag have been set in the value.
+/*
+ * For when the flag might be a set of bits, this will ensure that the exact
+ * set of bits in the flag have been set in the value.
  */
-#define IS_MASK_SET(value, flag)  (((value) & (flag)) == (flag))
+#define IS_MASK_SET(value, flag) (((value) & (flag)) == (flag))
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// Time
+#pragma -Time
 
-#define TT_MINUTE 60
-#define TT_HOUR   (60 * TT_MINUTE)
-#define TT_DAY    (24 * TT_HOUR)
-#define TT_5_DAYS (5 * TT_DAY)
-#define TT_WEEK   (7 * TT_DAY)
-#define TT_MONTH  (30.5 * TT_DAY)
-#define TT_YEAR   (365 * TT_DAY)
+#define X_MINUTE 60
+#define X_HOUR   (60 * TT_MINUTE)
+#define X_DAY    (24 * TT_HOUR)
+#define X_5_DAYS (5 * TT_DAY)
+#define X_WEEK   (7 * TT_DAY)
+#define X_MONTH  (30.5 * TT_DAY)
+#define X_YEAR   (365 * TT_DAY)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // Safe releases
 
-#define TT_RELEASE_SAFELY(__POINTER) { [__POINTER release]; __POINTER = nil; }
-#define TT_INVALIDATE_TIMER(__TIMER) { [__TIMER invalidate]; __TIMER = nil; }
+#define X_RELEASE_SAFELY(__POINTER) { [__POINTER release]; __POINTER = nil; }
+#define X_INVALIDATE_TIMER(__TIMER) { [__TIMER invalidate]; __TIMER = nil; }
 
 // Release a CoreFoundation object safely.
-#define TT_RELEASE_CF_SAFELY(__REF) { if (nil != (__REF)) { CFRelease(__REF); __REF = nil; } }
+#define X_RELEASE_CF_SAFELY(__REF) { if (nil != (__REF)) { CFRelease(__REF); __REF = nil; } }

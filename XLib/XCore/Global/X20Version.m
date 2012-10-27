@@ -8,5 +8,5 @@
 
 #import "X20Version.h"
 
-NSString* const Three20Version = @"1.0.0";
+NSString* const X20Version = @"1.0.0";
 

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		189C11AC163B8E53009120B8 /* XGlobalCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C11AB163B8E53009120B8 /* XGlobalCore.m */; };
+		189C11B0163BA089009120B8 /* X20.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C11AF163BA089009120B8 /* X20.m */; };
+		189C11B3163BA362009120B8 /* XGlobalCoreLocale.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C11B2163BA362009120B8 /* XGlobalCoreLocale.m */; };
+		189C11B7163BAA47009120B8 /* XDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C11B6163BAA47009120B8 /* XDebug.m */; };
+		189C11BF163BEB5F009120B8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189C11BE163BEB5F009120B8 /* SenTestingKit.framework */; };
+		189C11C0163BEB5F009120B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AEFF4816359EC7005EF160 /* UIKit.framework */; };
+		189C11C1163BEB5F009120B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AEFF4A16359EC7005EF160 /* Foundation.framework */; };
+		189C11C7163BEB5F009120B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 189C11C5163BEB5F009120B8 /* InfoPlist.strings */; };
+		189C11CA163BEB5F009120B8 /* X20UnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C11C9163BEB5F009120B8 /* X20UnitTest.m */; };
 		18AEFF4916359EC7005EF160 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AEFF4816359EC7005EF160 /* UIKit.framework */; };
 		18AEFF4B16359EC7005EF160 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AEFF4A16359EC7005EF160 /* Foundation.framework */; };
 		18AEFF4D16359EC7005EF160 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AEFF4C16359EC7005EF160 /* CoreGraphics.framework */; };
@@ -25,10 +34,24 @@
 		18AEFF7016359EC7005EF160 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AEFF6E16359EC7005EF160 /* FirstViewController.xib */; };
 		18AEFF7316359EC7005EF160 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AEFF7116359EC7005EF160 /* SecondViewController.xib */; };
 		2E9B3FDB163A7DB100954BA2 /* X20Version.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9B3FDA163A7DB100954BA2 /* X20Version.m */; };
-		2E9B3FDE163A7F4200954BA2 /* X20.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9B3FDD163A7F4200954BA2 /* X20.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		189C11AA163B8E53009120B8 /* XGlobalCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XGlobalCore.h; path = XLib/XCore/Global/XGlobalCore.h; sourceTree = "<group>"; };
+		189C11AB163B8E53009120B8 /* XGlobalCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XGlobalCore.m; path = XLib/XCore/Global/XGlobalCore.m; sourceTree = "<group>"; };
+		189C11AE163BA089009120B8 /* X20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = X20.h; path = XLib/XCore/Global/X20.h; sourceTree = "<group>"; };
+		189C11AF163BA089009120B8 /* X20.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = X20.m; path = XLib/XCore/Global/X20.m; sourceTree = "<group>"; };
+		189C11B1163BA362009120B8 /* XGlobalCoreLocale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XGlobalCoreLocale.h; path = XLib/XCore/Global/XGlobalCoreLocale.h; sourceTree = "<group>"; };
+		189C11B2163BA362009120B8 /* XGlobalCoreLocale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XGlobalCoreLocale.m; path = XLib/XCore/Global/XGlobalCoreLocale.m; sourceTree = "<group>"; };
+		189C11B5163BAA47009120B8 /* XDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XDebug.h; path = XLib/XCore/Debug/XDebug.h; sourceTree = "<group>"; };
+		189C11B6163BAA47009120B8 /* XDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XDebug.m; path = XLib/XCore/Debug/XDebug.m; sourceTree = "<group>"; };
+		189C11BD163BEB5F009120B8 /* X20UnitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = X20UnitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		189C11BE163BEB5F009120B8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		189C11C4163BEB5F009120B8 /* X20UnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "X20UnitTest-Info.plist"; sourceTree = "<group>"; };
+		189C11C6163BEB5F009120B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		189C11C8163BEB5F009120B8 /* X20UnitTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X20UnitTest.h; sourceTree = "<group>"; };
+		189C11C9163BEB5F009120B8 /* X20UnitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = X20UnitTest.m; sourceTree = "<group>"; };
+		189C11CB163BEB5F009120B8 /* X20UnitTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "X20UnitTest-Prefix.pch"; sourceTree = "<group>"; };
 		18AEFF4416359EC7005EF160 /* X20.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = X20.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AEFF4816359EC7005EF160 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18AEFF4A16359EC7005EF160 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,12 +80,20 @@
 		2E9B3FD8163A7C4300954BA2 /* XDebugFlags.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XDebugFlags.h; path = XLib/XCore/Headers/XDebugFlags.h; sourceTree = "<group>"; };
 		2E9B3FD9163A7DB100954BA2 /* X20Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = X20Version.h; path = XLib/XCore/Global/X20Version.h; sourceTree = "<group>"; };
 		2E9B3FDA163A7DB100954BA2 /* X20Version.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = X20Version.m; path = XLib/XCore/Global/X20Version.m; sourceTree = "<group>"; };
-		2E9B3FDC163A7F4200954BA2 /* X20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = X20.h; path = XLib/XCore/Global/X20.h; sourceTree = "<group>"; };
-		2E9B3FDD163A7F4200954BA2 /* X20.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = X20.m; path = XLib/XCore/Global/X20.m; sourceTree = "<group>"; };
 		2E9B3FDF163A80F700954BA2 /* XCorePreprocessorMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XCorePreprocessorMacros.h; path = XLib/XCore/Headers/XCorePreprocessorMacros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		189C11B9163BEB5F009120B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189C11BF163BEB5F009120B8 /* SenTestingKit.framework in Frameworks */,
+				189C11C0163BEB5F009120B8 /* UIKit.framework in Frameworks */,
+				189C11C1163BEB5F009120B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18AEFF4116359EC7005EF160 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,11 +107,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		189C11B4163BA9F5009120B8 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				189C11B5163BAA47009120B8 /* XDebug.h */,
+				189C11B6163BAA47009120B8 /* XDebug.m */,
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
+		189C11C2163BEB5F009120B8 /* X20UnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				189C11C8163BEB5F009120B8 /* X20UnitTest.h */,
+				189C11C9163BEB5F009120B8 /* X20UnitTest.m */,
+				189C11C3163BEB5F009120B8 /* Supporting Files */,
+			);
+			path = X20UnitTest;
+			sourceTree = "<group>";
+		};
+		189C11C3163BEB5F009120B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				189C11C4163BEB5F009120B8 /* X20UnitTest-Info.plist */,
+				189C11C5163BEB5F009120B8 /* InfoPlist.strings */,
+				189C11CB163BEB5F009120B8 /* X20UnitTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		18AEFF3916359EC7005EF160 = {
 			isa = PBXGroup;
 			children = (
 				18AEFF7916359FCE005EF160 /* XLib */,
 				18AEFF4E16359EC7005EF160 /* X20 */,
+				189C11C2163BEB5F009120B8 /* X20UnitTest */,
 				18AEFF4716359EC7005EF160 /* Frameworks */,
 				18AEFF4516359EC7005EF160 /* Products */,
 			);
@@ -90,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				18AEFF4416359EC7005EF160 /* X20.app */,
+				189C11BD163BEB5F009120B8 /* X20UnitTest.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +162,7 @@
 				18AEFF4816359EC7005EF160 /* UIKit.framework */,
 				18AEFF4A16359EC7005EF160 /* Foundation.framework */,
 				18AEFF4C16359EC7005EF160 /* CoreGraphics.framework */,
+				189C11BE163BEB5F009120B8 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -149,6 +212,7 @@
 		18AEFF7A1635A003005EF160 /* XCore */ = {
 			isa = PBXGroup;
 			children = (
+				189C11B4163BA9F5009120B8 /* Debug */,
 				2E9B3FC2163A671100954BA2 /* Global */,
 				2E9B3FD6163A7B3200954BA2 /* X20Core.h */,
 				2E9B3FD7163A7C2600954BA2 /* X20CoreAdditions.h */,
@@ -160,11 +224,15 @@
 		2E9B3FC2163A671100954BA2 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				189C11AE163BA089009120B8 /* X20.h */,
+				189C11AF163BA089009120B8 /* X20.m */,
 				2E9B3FDF163A80F700954BA2 /* XCorePreprocessorMacros.h */,
 				2E9B3FD9163A7DB100954BA2 /* X20Version.h */,
 				2E9B3FDA163A7DB100954BA2 /* X20Version.m */,
-				2E9B3FDC163A7F4200954BA2 /* X20.h */,
-				2E9B3FDD163A7F4200954BA2 /* X20.m */,
+				189C11AA163B8E53009120B8 /* XGlobalCore.h */,
+				189C11AB163B8E53009120B8 /* XGlobalCore.m */,
+				189C11B1163BA362009120B8 /* XGlobalCoreLocale.h */,
+				189C11B2163BA362009120B8 /* XGlobalCoreLocale.m */,
 			);
 			name = Global;
 			sourceTree = "<group>";
@@ -172,6 +240,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		189C11BC163BEB5F009120B8 /* X20UnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 189C11CC163BEB5F009120B8 /* Build configuration list for PBXNativeTarget "X20UnitTest" */;
+			buildPhases = (
+				189C11B8163BEB5F009120B8 /* Sources */,
+				189C11B9163BEB5F009120B8 /* Frameworks */,
+				189C11BA163BEB5F009120B8 /* Resources */,
+				189C11BB163BEB5F009120B8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = X20UnitTest;
+			productName = X20UnitTest;
+			productReference = 189C11BD163BEB5F009120B8 /* X20UnitTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		18AEFF4316359EC7005EF160 /* X20 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18AEFF7616359EC7005EF160 /* Build configuration list for PBXNativeTarget "X20" */;
@@ -211,11 +297,20 @@
 			projectRoot = "";
 			targets = (
 				18AEFF4316359EC7005EF160 /* X20 */,
+				189C11BC163BEB5F009120B8 /* X20UnitTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		189C11BA163BEB5F009120B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189C11C7163BEB5F009120B8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18AEFF4216359EC7005EF160 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -235,7 +330,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		189C11BB163BEB5F009120B8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		189C11B8163BEB5F009120B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189C11CA163BEB5F009120B8 /* X20UnitTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18AEFF4016359EC7005EF160 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,13 +364,24 @@
 				18AEFF6216359EC7005EF160 /* FirstViewController.m in Sources */,
 				18AEFF6916359EC7005EF160 /* SecondViewController.m in Sources */,
 				2E9B3FDB163A7DB100954BA2 /* X20Version.m in Sources */,
-				2E9B3FDE163A7F4200954BA2 /* X20.m in Sources */,
+				189C11AC163B8E53009120B8 /* XGlobalCore.m in Sources */,
+				189C11B0163BA089009120B8 /* X20.m in Sources */,
+				189C11B3163BA362009120B8 /* XGlobalCoreLocale.m in Sources */,
+				189C11B7163BAA47009120B8 /* XDebug.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		189C11C5163BEB5F009120B8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				189C11C6163BEB5F009120B8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		18AEFF5116359EC7005EF160 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -279,6 +409,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		189C11CD163BEB5F009120B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "X20UnitTest/X20UnitTest-Prefix.pch";
+				INFOPLIST_FILE = "X20UnitTest/X20UnitTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		189C11CE163BEB5F009120B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "X20UnitTest/X20UnitTest-Prefix.pch";
+				INFOPLIST_FILE = "X20UnitTest/X20UnitTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		18AEFF7416359EC7005EF160 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -352,6 +512,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		189C11CC163BEB5F009120B8 /* Build configuration list for PBXNativeTarget "X20UnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189C11CD163BEB5F009120B8 /* Debug */,
+				189C11CE163BEB5F009120B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		18AEFF3E16359EC7005EF160 /* Build configuration list for PBXProject "X20" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
