@@ -24,10 +24,10 @@
     [super tearDown];
 }
 
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet in X20UnitTest");
-}
+//- (void)testExample
+//{
+//    STFail(@"Unit tests are not implemented yet in X20UnitTest");
+//}
 
 -(void)testXCurrentLocale
 {

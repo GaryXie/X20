@@ -16,6 +16,8 @@
 		189C11C1163BEB5F009120B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AEFF4A16359EC7005EF160 /* Foundation.framework */; };
 		189C11C7163BEB5F009120B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 189C11C5163BEB5F009120B8 /* InfoPlist.strings */; };
 		189C11CA163BEB5F009120B8 /* X20UnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C11C9163BEB5F009120B8 /* X20UnitTest.m */; };
+		189C11D1163C07C5009120B8 /* XGlobalCorePaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C11D0163C07C5009120B8 /* XGlobalCorePaths.m */; };
+		189C11D4163C2DCB009120B8 /* XGlobalCoreRects.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C11D3163C2DCA009120B8 /* XGlobalCoreRects.m */; };
 		18AEFF4916359EC7005EF160 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AEFF4816359EC7005EF160 /* UIKit.framework */; };
 		18AEFF4B16359EC7005EF160 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AEFF4A16359EC7005EF160 /* Foundation.framework */; };
 		18AEFF4D16359EC7005EF160 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AEFF4C16359EC7005EF160 /* CoreGraphics.framework */; };
@@ -52,6 +54,10 @@
 		189C11C8163BEB5F009120B8 /* X20UnitTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X20UnitTest.h; sourceTree = "<group>"; };
 		189C11C9163BEB5F009120B8 /* X20UnitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = X20UnitTest.m; sourceTree = "<group>"; };
 		189C11CB163BEB5F009120B8 /* X20UnitTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "X20UnitTest-Prefix.pch"; sourceTree = "<group>"; };
+		189C11CF163C07C4009120B8 /* XGlobalCorePaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XGlobalCorePaths.h; path = XLib/XCore/Global/XGlobalCorePaths.h; sourceTree = "<group>"; };
+		189C11D0163C07C5009120B8 /* XGlobalCorePaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XGlobalCorePaths.m; path = XLib/XCore/Global/XGlobalCorePaths.m; sourceTree = "<group>"; };
+		189C11D2163C2DC9009120B8 /* XGlobalCoreRects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XGlobalCoreRects.h; path = XLib/XCore/Global/XGlobalCoreRects.h; sourceTree = "<group>"; };
+		189C11D3163C2DCA009120B8 /* XGlobalCoreRects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XGlobalCoreRects.m; path = XLib/XCore/Global/XGlobalCoreRects.m; sourceTree = "<group>"; };
 		18AEFF4416359EC7005EF160 /* X20.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = X20.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AEFF4816359EC7005EF160 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18AEFF4A16359EC7005EF160 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -233,6 +239,10 @@
 				189C11AB163B8E53009120B8 /* XGlobalCore.m */,
 				189C11B1163BA362009120B8 /* XGlobalCoreLocale.h */,
 				189C11B2163BA362009120B8 /* XGlobalCoreLocale.m */,
+				189C11CF163C07C4009120B8 /* XGlobalCorePaths.h */,
+				189C11D0163C07C5009120B8 /* XGlobalCorePaths.m */,
+				189C11D2163C2DC9009120B8 /* XGlobalCoreRects.h */,
+				189C11D3163C2DCA009120B8 /* XGlobalCoreRects.m */,
 			);
 			name = Global;
 			sourceTree = "<group>";
@@ -368,6 +378,8 @@
 				189C11B0163BA089009120B8 /* X20.m in Sources */,
 				189C11B3163BA362009120B8 /* XGlobalCoreLocale.m in Sources */,
 				189C11B7163BAA47009120B8 /* XDebug.m in Sources */,
+				189C11D1163C07C5009120B8 /* XGlobalCorePaths.m in Sources */,
+				189C11D4163C2DCB009120B8 /* XGlobalCoreRects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
