@@ -19,6 +19,8 @@
 		189C11D1163C07C5009120B8 /* XGlobalCorePaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C11D0163C07C5009120B8 /* XGlobalCorePaths.m */; };
 		189C11D4163C2DCB009120B8 /* XGlobalCoreRects.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C11D3163C2DCA009120B8 /* XGlobalCoreRects.m */; };
 		189D4930163EE06F00A1A104 /* XAvailability.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D492F163EE06F00A1A104 /* XAvailability.m */; };
+		18A21F081642CC2E004C93DF /* NSArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A21F071642CC2E004C93DF /* NSArrayAdditions.m */; };
+		18A3A255164811BE00C19086 /* NSObjectAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A3A254164811BE00C19086 /* NSObjectAdditions.m */; };
 		18AEFF4916359EC7005EF160 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AEFF4816359EC7005EF160 /* UIKit.framework */; };
 		18AEFF4B16359EC7005EF160 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AEFF4A16359EC7005EF160 /* Foundation.framework */; };
 		18AEFF4D16359EC7005EF160 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AEFF4C16359EC7005EF160 /* CoreGraphics.framework */; };
@@ -61,6 +63,10 @@
 		189C11D3163C2DCA009120B8 /* XGlobalCoreRects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XGlobalCoreRects.m; path = XLib/XCore/Global/XGlobalCoreRects.m; sourceTree = "<group>"; };
 		189D492E163EE06F00A1A104 /* XAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XAvailability.h; path = XLib/XCore/Global/XAvailability.h; sourceTree = "<group>"; };
 		189D492F163EE06F00A1A104 /* XAvailability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XAvailability.m; path = XLib/XCore/Global/XAvailability.m; sourceTree = "<group>"; };
+		18A21F061642CC2E004C93DF /* NSArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSArrayAdditions.h; path = XLib/XCore/Additions/NSArrayAdditions.h; sourceTree = "<group>"; };
+		18A21F071642CC2E004C93DF /* NSArrayAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSArrayAdditions.m; path = XLib/XCore/Additions/NSArrayAdditions.m; sourceTree = "<group>"; };
+		18A3A253164811BE00C19086 /* NSObjectAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSObjectAdditions.h; path = XLib/XCore/Additions/NSObjectAdditions.h; sourceTree = "<group>"; };
+		18A3A254164811BE00C19086 /* NSObjectAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSObjectAdditions.m; path = XLib/XCore/Additions/NSObjectAdditions.m; sourceTree = "<group>"; };
 		18AEFF4416359EC7005EF160 /* X20.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = X20.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AEFF4816359EC7005EF160 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18AEFF4A16359EC7005EF160 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -145,6 +151,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		18A21F041642CB74004C93DF /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				18A21F061642CC2E004C93DF /* NSArrayAdditions.h */,
+				18A21F071642CC2E004C93DF /* NSArrayAdditions.m */,
+				18A3A253164811BE00C19086 /* NSObjectAdditions.h */,
+				18A3A254164811BE00C19086 /* NSObjectAdditions.m */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
 		18AEFF3916359EC7005EF160 = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +238,7 @@
 		18AEFF7A1635A003005EF160 /* XCore */ = {
 			isa = PBXGroup;
 			children = (
+				18A21F041642CB74004C93DF /* Additions */,
 				189C11B4163BA9F5009120B8 /* Debug */,
 				2E9B3FC2163A671100954BA2 /* Global */,
 				2E9B3FD6163A7B3200954BA2 /* X20Core.h */,
@@ -386,6 +404,8 @@
 				189C11D1163C07C5009120B8 /* XGlobalCorePaths.m in Sources */,
 				189C11D4163C2DCB009120B8 /* XGlobalCoreRects.m in Sources */,
 				189D4930163EE06F00A1A104 /* XAvailability.m in Sources */,
+				18A21F081642CC2E004C93DF /* NSArrayAdditions.m in Sources */,
+				18A3A255164811BE00C19086 /* NSObjectAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,8 +18,14 @@
  * categories and no classes.
  * See http://developer.apple.com/library/mac/#qa/qa2006/qa1490.html for more info.
  */
-#define X_FIX_CATEGORY_BUG(name) @interface X_FIX_GATEGORY_BUG_##name @end \
-@implementation X_FIX_CATEGORY_BUG_##name @end 
+//#define XX_FIX_CATEGORY_BUG(name) @interface XX_FIX_CATEGORY_BUG_##name @end \
+//@implementation XX_FIX_CATEGORY_BUG_##name @end 
+
+#define X_FIX_CATEGORY_BUG(name) @interface X_FIX_CATEGORY_BUG_##name @end \
+@implementation X_FIX_CATEGORY_BUG_##name @end
+
+//#define TT_FIX_CATEGORY_BUG(name) @interface TT_FIX_CATEGORY_BUG_##name @end \
+//@implementation TT_FIX_CATEGORY_BUG_##name @end
 // Code Management
 
 
