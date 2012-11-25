@@ -40,12 +40,12 @@
 #pragma -Time
 
 #define X_MINUTE 60
-#define X_HOUR   (60 * TT_MINUTE)
-#define X_DAY    (24 * TT_HOUR)
-#define X_5_DAYS (5 * TT_DAY)
-#define X_WEEK   (7 * TT_DAY)
-#define X_MONTH  (30.5 * TT_DAY)
-#define X_YEAR   (365 * TT_DAY)
+#define X_HOUR   (60 * X_MINUTE)
+#define X_DAY    (24 * X_HOUR)
+#define X_5_DAYS (5 * X_DAY)
+#define X_WEEK   (7 * X_DAY)
+#define X_MONTH  (30.5 * X_DAY)
+#define X_YEAR   (365 * X_DAY)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // Safe releases
