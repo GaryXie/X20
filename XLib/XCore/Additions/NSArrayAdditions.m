@@ -23,7 +23,7 @@ X_FIX_CATEGORY_BUG(NSArrayAdditions)
     NSEnumerator* e = [copy objectEnumerator];
     for(id delegate; (delegate = [e nextObject]);)
     {
-        if([delegate respondsToSelector:selector])
+        if ([delegate respondsToSelector:selector])
         {
             [delegate performSelector:selector];
         }
@@ -38,7 +38,7 @@ X_FIX_CATEGORY_BUG(NSArrayAdditions)
     NSEnumerator* e = [copy objectEnumerator];
     for(id delegate; (delegate = [e nextObject]);)
     {
-        if([delegate respondsToSelector:selector])
+        if ([delegate respondsToSelector:selector])
         {
             [delegate performSelector:selector withObject:p1];
         }
@@ -53,7 +53,7 @@ X_FIX_CATEGORY_BUG(NSArrayAdditions)
     NSEnumerator* e = [copy objectEnumerator];
     for(id delegate; (delegate = [e nextObject]);)
     {
-        if([delegate respondsToSelector:selector])
+        if ([delegate respondsToSelector:selector])
         {
             [delegate performSelector:selector withObject:p1 withObject:p2];
         }
@@ -68,7 +68,7 @@ X_FIX_CATEGORY_BUG(NSArrayAdditions)
     NSEnumerator* e = [copy objectEnumerator];
     for(id delegate; (delegate = [e nextObject]);)
     {
-        if([delegate respondsToSelector:selector])
+        if ([delegate respondsToSelector:selector])
         {
             [delegate performSelector:selector withObject:p1 withObject:p2 withObject:p3];
         }
@@ -100,7 +100,7 @@ X_FIX_CATEGORY_BUG(NSArrayAdditions)
     for(id object in self)
     {
         id propertyValue = [object valueForKey:key];
-        if([propertyValue isEqual:value])
+        if ([propertyValue isEqual:value])
         {
             return object;
         }
@@ -113,7 +113,7 @@ X_FIX_CATEGORY_BUG(NSArrayAdditions)
 {
     for(id object in self)
     {
-        if([object isKindOfClass:cls])
+        if ([object isKindOfClass:cls])
         {
             return object;
         }
@@ -127,7 +127,7 @@ X_FIX_CATEGORY_BUG(NSArrayAdditions)
 {
     for(id item in self)
     {
-        if([[item performSelector:selector withObject:object] boolValue])
+        if ([[item performSelector:selector withObject:object] boolValue])
             return YES;
     }
 return NO;

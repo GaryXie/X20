@@ -20,7 +20,7 @@ X_FIX_CATEGORY_BUG(NSOjbectAdditions)
 {
     NSMethodSignature* sig = [self methodSignatureForSelector:selector];
     
-    if(nil == sig)
+    if (nil == sig)
         return nil;
     
     NSInvocation* invo = [NSInvocation invocationWithMethodSignature:sig];
@@ -30,7 +30,7 @@ X_FIX_CATEGORY_BUG(NSOjbectAdditions)
     [invo setArgument:&p2 atIndex:3];
     [invo setArgument:&p3 atIndex:4];
     [invo invoke];
-    if(sig.methodReturnLength)
+    if (sig.methodReturnLength)
     {
         id anObject;
         [invo getReturnValue:&anObject];
@@ -46,7 +46,7 @@ X_FIX_CATEGORY_BUG(NSOjbectAdditions)
 {
     NSMethodSignature* sig = [self methodSignatureForSelector:selector];
     
-    if(nil == sig)
+    if (nil == sig)
         return nil;
     
     NSInvocation* invo = [NSInvocation invocationWithMethodSignature:sig];
@@ -57,7 +57,7 @@ X_FIX_CATEGORY_BUG(NSOjbectAdditions)
     [invo setArgument:&p3 atIndex:4];
     [invo setArgument:&p4 atIndex:5];
     [invo invoke];
-    if(sig.methodReturnLength)
+    if (sig.methodReturnLength)
     {
         id anObject;
         [invo getReturnValue:&anObject];
@@ -74,7 +74,7 @@ X_FIX_CATEGORY_BUG(NSOjbectAdditions)
 {
     NSMethodSignature* sig = [self methodSignatureForSelector:selector];
     
-    if(nil == sig)
+    if (nil == sig)
         return nil;
     
     NSInvocation* invo = [NSInvocation invocationWithMethodSignature:sig];
@@ -86,7 +86,7 @@ X_FIX_CATEGORY_BUG(NSOjbectAdditions)
     [invo setArgument:&p4 atIndex:5];
     [invo setArgument:&p5 atIndex:6];
     [invo invoke];
-    if(sig.methodReturnLength)
+    if (sig.methodReturnLength)
     {
         id anObject;
         [invo getReturnValue:&anObject];
@@ -103,7 +103,7 @@ X_FIX_CATEGORY_BUG(NSOjbectAdditions)
 {
     NSMethodSignature* sig = [self methodSignatureForSelector:selector];
     
-    if(nil == sig)
+    if (nil == sig)
         return nil;
     
     NSInvocation* invo = [NSInvocation invocationWithMethodSignature:sig];
@@ -116,7 +116,7 @@ X_FIX_CATEGORY_BUG(NSOjbectAdditions)
     [invo setArgument:&p5 atIndex:6];
     [invo setArgument:&p6 atIndex:7];
     [invo invoke];
-    if(sig.methodReturnLength)
+    if (sig.methodReturnLength)
     {
         id anObject;
         [invo getReturnValue:&anObject];
@@ -133,7 +133,7 @@ X_FIX_CATEGORY_BUG(NSOjbectAdditions)
 {
     NSMethodSignature* sig = [self methodSignatureForSelector:selector];
     
-    if(nil == sig)
+    if (nil == sig)
         return nil;
     
     NSInvocation* invo = [NSInvocation invocationWithMethodSignature:sig];
@@ -147,7 +147,7 @@ X_FIX_CATEGORY_BUG(NSOjbectAdditions)
     [invo setArgument:&p6 atIndex:7];
     [invo setArgument:&p7 atIndex:8];
     [invo invoke];
-    if(sig.methodReturnLength)
+    if (sig.methodReturnLength)
     {
         id anObject;
         [invo getReturnValue:&anObject];

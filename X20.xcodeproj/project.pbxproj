@@ -65,8 +65,8 @@
 		189C11D3163C2DCA009120B8 /* XGlobalCoreRects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XGlobalCoreRects.m; path = XLib/XCore/Global/XGlobalCoreRects.m; sourceTree = "<group>"; };
 		189D492E163EE06F00A1A104 /* XAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XAvailability.h; path = XLib/XCore/Global/XAvailability.h; sourceTree = "<group>"; };
 		189D492F163EE06F00A1A104 /* XAvailability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XAvailability.m; path = XLib/XCore/Global/XAvailability.m; sourceTree = "<group>"; };
-		18A21F061642CC2E004C93DF /* NSArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSArrayAdditions.h; path = XLib/XCore/Additions/NSArrayAdditions.h; sourceTree = "<group>"; };
-		18A21F071642CC2E004C93DF /* NSArrayAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSArrayAdditions.m; path = XLib/XCore/Additions/NSArrayAdditions.m; sourceTree = "<group>"; };
+		18A21F061642CC2E004C93DF /* NSArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = NSArrayAdditions.h; path = XLib/XCore/Additions/NSArrayAdditions.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		18A21F071642CC2E004C93DF /* NSArrayAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = NSArrayAdditions.m; path = XLib/XCore/Additions/NSArrayAdditions.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		18A3A253164811BE00C19086 /* NSObjectAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSObjectAdditions.h; path = XLib/XCore/Additions/NSObjectAdditions.h; sourceTree = "<group>"; };
 		18A3A254164811BE00C19086 /* NSObjectAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSObjectAdditions.m; path = XLib/XCore/Additions/NSObjectAdditions.m; sourceTree = "<group>"; };
 		18AEEF1B16528DF1008D245A /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDataAdditions.h; path = XLib/XCore/Additions/NSDataAdditions.h; sourceTree = "<group>"; };
@@ -80,12 +80,12 @@
 		18AEFF5416359EC7005EF160 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18AEFF5616359EC7005EF160 /* X20-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "X20-Prefix.pch"; sourceTree = "<group>"; };
 		18AEFF5716359EC7005EF160 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		18AEFF5816359EC7005EF160 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18AEFF5816359EC7005EF160 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		18AEFF5A16359EC7005EF160 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		18AEFF5C16359EC7005EF160 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		18AEFF5E16359EC7005EF160 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		18AEFF6016359EC7005EF160 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		18AEFF6116359EC7005EF160 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		18AEFF6116359EC7005EF160 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = FirstViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		18AEFF6316359EC7005EF160 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		18AEFF6516359EC7005EF160 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		18AEFF6716359EC7005EF160 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };

@@ -46,7 +46,7 @@ NSString* XPathForBundleResource(NSString* relativePath)
 NSString* XPathForDocumentsResource(NSString* relativePath)
 {
     static NSString* documentsPath = nil;
-    if(nil == documentsPath)
+    if (nil == documentsPath)
     {
         NSArray* dirs = NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES);
         documentsPath = [[dirs objectAtIndex:0] retain];

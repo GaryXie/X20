@@ -48,14 +48,14 @@ static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopq
 
 +(NSData *)dataWithBase64EncodedString:(NSString *)string
 {
-    if(0 == [string length])
+    if (0 == [string length])
         return [NSData data];
     
     static char *decodingTable = NULL;
-    if(NULL == decodingTable)
+    if (NULL == decodingTable)
     {
         decodingTable = malloc(256);
-        if(NULL == decodingTable) return nil;
+        if (NULL == decodingTable) return nil;
         memset(decodingTable, CHAR_MAX, 256);
         NSUInteger i;
         for(i = 0; i < 64; i++)
@@ -63,9 +63,9 @@ static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopq
     }
     
     const char *characters = [string cStringUsingEncoding:NSASCIIStringEncoding];
-    if(NULL == characters) return nil;
+    if (NULL == characters) return nil;
     char *bytes = malloc((([string length] + 3) / 4) * 3);
-    if(NULL == bytes) return nil;
+    if (NULL == bytes) return nil;
     NSUInteger length = 0;
     
     NSUInteger i = 0;
@@ -74,18 +74,18 @@ static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopq
         short bufferLength;
         for (bufferLength = 0; bufferLength < 4; i++)
         {
-            if('\0' == characters[i]) break;
-            if('=' == characters[i] || isspace(characters[i])) continue;
+            if ('\0' == characters[i]) break;
+            if ('=' == characters[i] || isspace(characters[i])) continue;
             buffer[bufferLength] = decodingTable[(short)characters[i]];
-            if(CHAR_MAX == buffer[bufferLength]++)  // Illegal character!
+            if (CHAR_MAX == buffer[bufferLength]++)  // Illegal character!
             {
                 free(bytes);
                 return nil;
             }
         }
         
-        if(0 == bufferLength) break;
-        if(1 == bufferLength)   // At least two characters are needed to produce one byte!
+        if (0 == bufferLength) break;
+        if (1 == bufferLength)   // At least two characters are needed to produce one byte!
         {
             free(bytes);
             return nil;
@@ -93,9 +93,9 @@ static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopq
         
         // Decode the characters in the buffer to bytes.
         bytes[length++] = (buffer[0] << 2) | (buffer[1] >> 4);
-        if(bufferLength > 2)
+        if (bufferLength > 2)
             bytes[length++] = (buffer[1] << 4) | (buffer[2] >> 2);
-        if(bufferLength > 3)
+        if (bufferLength > 3)
             bytes[length++] = (buffer[2] << 6) | buffer[3];
     }
     
@@ -106,10 +106,10 @@ static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopq
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 -(NSString *)base64Encoding
 {
-    if(0 == [self length]) return @"";
+    if (0 == [self length]) return @"";
     
     char *characters = malloc((([self length] + 2) / 3) * 4);
-    if(NULL == characters) return nil;
+    if (NULL == characters) return nil;
     NSUInteger length = 0;
     
     NSUInteger i = 0;
@@ -123,11 +123,11 @@ static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopq
         // Encode the bytes in the buffer to four characters, includeing padding '=' characters if necessary.
         characters[length++] = encodingTable[(buffer[0] & 0xFC) >> 2];
         characters[length++] = encodingTable[((buffer[0] & 0x03) << 4) | ((buffer[1] & 0xF0) >> 4)];
-        if(bufferLength > 1)
+        if (bufferLength > 1)
             characters[length++] = encodingTable[((buffer[1] & 0x0F) << 2) | ((buffer[2] & 0xC0) >> 6)];
         else characters[length++] = '=';
         
-        if(bufferLength > 2)
+        if (bufferLength > 2)
             characters[length++] = encodingTable[buffer[2] & 0x3F];
         else characters[length++] = '=';
     }

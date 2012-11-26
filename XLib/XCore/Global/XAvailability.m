@@ -17,7 +17,7 @@ BOOL XDeviceOSVersionIsAtLeast(double versionNumber)
 Class XUIPopoverControllerClass()
 {
     static Class sClass = nil;
-    if(nil == sClass)
+    if (nil == sClass)
     {
         sClass = NSClassFromString(@"UIPopoverController");
     }
