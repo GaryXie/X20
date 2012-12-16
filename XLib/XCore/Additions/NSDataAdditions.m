@@ -13,7 +13,7 @@
 
 X_FIX_CATEGORY_BUG(NSDataAdditions)
 
-@implementation NSData (XCategory)
+@implementation NSData (XAdditions)
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 -(NSString*)md5Hash

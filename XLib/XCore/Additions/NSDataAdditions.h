@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSData (XCategory)
+@interface NSData (XAdditions)
 
 // Calculate the md5 hash of this data using CC_MD5.
 @property (nonatomic, readonly) NSString* md5Hash;
