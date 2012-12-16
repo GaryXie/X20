@@ -39,6 +39,7 @@
 		18AEFF6D16359EC7005EF160 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AEFF6C16359EC7005EF160 /* second@2x.png */; };
 		18AEFF7016359EC7005EF160 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AEFF6E16359EC7005EF160 /* FirstViewController.xib */; };
 		18AEFF7316359EC7005EF160 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AEFF7116359EC7005EF160 /* SecondViewController.xib */; };
+		18C97540167DC15E0013467C /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9753F167DC15E0013467C /* NSStringAdditions.m */; };
 		18FCB87E16622D1E004A04A3 /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FCB87D16622D1E004A04A3 /* NSDateAdditions.m */; };
 		2E9B3FDB163A7DB100954BA2 /* X20Version.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9B3FDA163A7DB100954BA2 /* X20Version.m */; };
 		2EA2768A1663754B0024F353 /* NSMutableArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA276891663754A0024F353 /* NSMutableArrayAdditions.m */; };
@@ -96,6 +97,8 @@
 		18AEFF6C16359EC7005EF160 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		18AEFF6F16359EC7005EF160 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		18AEFF7216359EC7005EF160 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		18C9753E167DC15E0013467C /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSStringAdditions.h; path = XLib/XCore/Additions/NSStringAdditions.h; sourceTree = "<group>"; };
+		18C9753F167DC15E0013467C /* NSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSStringAdditions.m; path = XLib/XCore/Additions/NSStringAdditions.m; sourceTree = "<group>"; };
 		18FCB87C16622D1E004A04A3 /* NSDateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDateAdditions.h; path = XLib/XCore/Additions/NSDateAdditions.h; sourceTree = "<group>"; };
 		18FCB87D16622D1E004A04A3 /* NSDateAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDateAdditions.m; path = XLib/XCore/Additions/NSDateAdditions.m; sourceTree = "<group>"; };
 		2E9B3FD6163A7B3200954BA2 /* X20Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = X20Core.h; path = XLib/XCore/Headers/X20Core.h; sourceTree = "<group>"; };
@@ -178,6 +181,8 @@
 				2EA276891663754A0024F353 /* NSMutableArrayAdditions.m */,
 				2EA2768B166398430024F353 /* NSMutableDictionaryAdditions.h */,
 				2EA2768C166398440024F353 /* NSMutableDictionaryAdditions.m */,
+				18C9753E167DC15E0013467C /* NSStringAdditions.h */,
+				18C9753F167DC15E0013467C /* NSStringAdditions.m */,
 			);
 			name = Additions;
 			sourceTree = "<group>";
@@ -430,6 +435,7 @@
 				18FCB87E16622D1E004A04A3 /* NSDateAdditions.m in Sources */,
 				2EA2768A1663754B0024F353 /* NSMutableArrayAdditions.m in Sources */,
 				2EA2768D166398440024F353 /* NSMutableDictionaryAdditions.m in Sources */,
+				18C97540167DC15E0013467C /* NSStringAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
