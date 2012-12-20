@@ -13,71 +13,51 @@
 // Determines if the string contains only whitespace and newlines.
 - (BOOL)isWhitespaceAndNewlines;
 
-// Determines if the string 
+/**
+ * Determines if the string is empty or contains only whitespace.
+ * @deprecated Use TTIsStringWithAnyText() instead. Updating your use of
+ * this method is non-trivial. See the note below.
+ *
+ * Notes for updating your use of isEmptyOrWhitespace:
+ *
+ * if (!textField.text.isEmptyOrWhitespace) {
+ *
+ * becomes
+ *
+ * if (TTIsStringWithAnyText(textField.text) && !textField.text.isWhitespaceAndNewlines) {
+ *
+ * and
+ *
+ * if (textField.text.isEmptyOrWhitespace) {
+ *
+ * becomes
+ *
+ * if (0 == textField.text.length || textField.text.isWhitespaceAndNewlines) {
+ */
+- (BOOL)isEmptyOrWhitespace __XDEPRECATED_METHOD;
 
-@end
+// Parses a URL query string into a dictionary.
+// @deprecated Use queryContentsUsingEncoding: instead.
+- (NSDictionary*)queryDictionaryUsingEncoding:(NSStringEncoding)encoding __XDEPRECATED_METHOD;
 
+// Parses a URL query string into a dictionary where the values are arrays.
+- (NSDictionary*)queryContentsUsingEncoding:(NSStringEncoding)encoding;
 
-///**
-// * Determines if the string is empty or contains only whitespace.
-// * @deprecated Use TTIsStringWithAnyText() instead. Updating your use of
-// * this method is non-trivial. See the note below.
-// *
-// * Notes for updating your use of isEmptyOrWhitespace:
-// *
-// * if (!textField.text.isEmptyOrWhitespace) {
-// *
-// * becomes
-// *
-// * if (TTIsStringWithAnyText(textField.text) && !textField.text.isWhitespaceAndNewlines) {
-// *
-// * and
-// *
-// * if (textField.text.isEmptyOrWhitespace) {
-// *
-// * becomes
-// *
-// * if (0 == textField.text.length || textField.text.isWhitespaceAndNewlines) {
-// */
-//- (BOOL)isEmptyOrWhitespace __TTDEPRECATED_METHOD;
-//
-///**
-// * Parses a URL query string into a dictionary.
-// *
-// * @deprecated Use queryContentsUsingEncoding: instead.
-// */
-//- (NSDictionary*)queryDictionaryUsingEncoding:(NSStringEncoding)encoding __TTDEPRECATED_METHOD;
-//
-///**
-// * Parses a URL query string into a dictionary where the values are arrays.
-// */
-//- (NSDictionary*)queryContentsUsingEncoding:(NSStringEncoding)encoding;
-//
-///**
-// * Parses a URL, adds query parameters to its query, and re-encodes it as a new URL.
-// */
-//- (NSString*)stringByAddingQueryDictionary:(NSDictionary*)query;
-//
-///**
-// * Parses a URL, adds urlEncoded query parameters to its query, and re-encodes it as a new URL.
-// *
-// * This method encodes keys and values of query using [NSString urlEncoded] and calls
-// * stringByAddingQueryDictionary with the resulting dictionary.
-// *
-// * @throw NSInvalidArgumentException If any value or key does not respond to urlEncoded.
-// */
-//- (NSString*)stringByAddingURLEncodedQueryDictionary:(NSDictionary*)query;
-//
-///**
-// * Returns a URL Encoded String
-// */
-//- (NSString*)urlEncoded;
-//
-///**
-// * Returns a string with all HTML tags removed.
-// */
-//- (NSString*)stringByRemovingHTMLTags;
-//
+// Parses a URL, adds query parameters to its query, and re-encodes it as a new URL.
+- (NSString*)stringByAddingQueryDictionary:(NSDictionary*)query;
+
+// Parses a URL, adds urlEncoded query parameters to its query, and re-encodes it as a new URL.
+// This method encodes keys and values of query using [NSString urlEncoded] and calls
+// stringByAddingQueryDictionary with the resulting dictionary.
+// @throw NSInvalidArgumentExceptiong If any value or key does not respond to urlEncoded.
+- (NSString*)stringByAddingURLEncodedQueryDictionary:(NSDictionary*)query;
+
+// Returns a URL Encoded String
+- (NSString*)urlEncoded;
+
+// Returns a string with all HTML tags removed.
+- (NSString*)stringByRemovingHTMLTags;
+
 ///**
 // * Compares two strings expressing software versions.
 // *
@@ -110,21 +90,16 @@
 // *   "3.02" ?? "3.0.3"
 // *   "3.02" ?? "3.0.2"
 // */
-//- (NSComparisonResult)versionStringCompare:(NSString *)other;
-//
-///**
-// * Calculate the md5 hash of this string using CC_MD5.
-// *
-// * @return md5 hash of this string
-// */
-//@property (nonatomic, readonly) NSString* md5Hash;
-//
-///**
-// * Calculate the SHA1 hash of this string using CommonCrypto CC_SHA1.
-// *
-// * @return NSString with SHA1 hash of this string
-// */
-//@property (nonatomic, readonly) NSString* sha1Hash;
-//
-//@end
+- (NSComparisonResult)versionStringCompare:(NSString*)other;
+
+// Calculate the md5 hash of this string using CC_MD5.
+// @return md5 hash of this string
+@property (nonatomic, readonly) NSString* md5Hash;
+
+// Calculate the SHA1 hash of this string using CommonCrypto CC_SHA1.
+// @return NSString with SHA1 hash of this string.
+@property (nonatomic, readonly) NSString* sha1Hash;
+
+@end
+
 

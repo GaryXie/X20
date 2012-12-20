@@ -41,6 +41,7 @@
 		18AEFF7316359EC7005EF160 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AEFF7116359EC7005EF160 /* SecondViewController.xib */; };
 		18C97540167DC15E0013467C /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9753F167DC15E0013467C /* NSStringAdditions.m */; };
 		18FCB87E16622D1E004A04A3 /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FCB87D16622D1E004A04A3 /* NSDateAdditions.m */; };
+		2E67D50916833BDD0047EECF /* XMarkupStripper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E67D50816833BDD0047EECF /* XMarkupStripper.m */; };
 		2E9B3FDB163A7DB100954BA2 /* X20Version.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9B3FDA163A7DB100954BA2 /* X20Version.m */; };
 		2EA2768A1663754B0024F353 /* NSMutableArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA276891663754A0024F353 /* NSMutableArrayAdditions.m */; };
 		2EA2768D166398440024F353 /* NSMutableDictionaryAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2768C166398440024F353 /* NSMutableDictionaryAdditions.m */; };
@@ -101,6 +102,8 @@
 		18C9753F167DC15E0013467C /* NSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSStringAdditions.m; path = XLib/XCore/Additions/NSStringAdditions.m; sourceTree = "<group>"; };
 		18FCB87C16622D1E004A04A3 /* NSDateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDateAdditions.h; path = XLib/XCore/Additions/NSDateAdditions.h; sourceTree = "<group>"; };
 		18FCB87D16622D1E004A04A3 /* NSDateAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDateAdditions.m; path = XLib/XCore/Additions/NSDateAdditions.m; sourceTree = "<group>"; };
+		2E67D50716833BDD0047EECF /* XMarkupStripper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMarkupStripper.h; path = XLib/XCore/Classes/XMarkupStripper.h; sourceTree = "<group>"; };
+		2E67D50816833BDD0047EECF /* XMarkupStripper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMarkupStripper.m; path = XLib/XCore/Classes/XMarkupStripper.m; sourceTree = "<group>"; };
 		2E9B3FD6163A7B3200954BA2 /* X20Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = X20Core.h; path = XLib/XCore/Headers/X20Core.h; sourceTree = "<group>"; };
 		2E9B3FD7163A7C2600954BA2 /* X20CoreAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = X20CoreAdditions.h; path = XLib/XCore/Headers/X20CoreAdditions.h; sourceTree = "<group>"; };
 		2E9B3FD8163A7C4300954BA2 /* XDebugFlags.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XDebugFlags.h; path = XLib/XCore/Headers/XDebugFlags.h; sourceTree = "<group>"; };
@@ -263,6 +266,7 @@
 		18AEFF7A1635A003005EF160 /* XCore */ = {
 			isa = PBXGroup;
 			children = (
+				2EAA3C541683397F00B5CDD2 /* Classes */,
 				18A21F041642CB74004C93DF /* Additions */,
 				189C11B4163BA9F5009120B8 /* Debug */,
 				2E9B3FC2163A671100954BA2 /* Global */,
@@ -293,6 +297,15 @@
 				189D492F163EE06F00A1A104 /* XAvailability.m */,
 			);
 			name = Global;
+			sourceTree = "<group>";
+		};
+		2EAA3C541683397F00B5CDD2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2E67D50716833BDD0047EECF /* XMarkupStripper.h */,
+				2E67D50816833BDD0047EECF /* XMarkupStripper.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +449,7 @@
 				2EA2768A1663754B0024F353 /* NSMutableArrayAdditions.m in Sources */,
 				2EA2768D166398440024F353 /* NSMutableDictionaryAdditions.m in Sources */,
 				18C97540167DC15E0013467C /* NSStringAdditions.m in Sources */,
+				2E67D50916833BDD0047EECF /* XMarkupStripper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
