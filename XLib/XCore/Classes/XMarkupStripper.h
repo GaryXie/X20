@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface XMarkupStripper : NSObject
+#if ____IPHONE_4_0 && __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
+@interface XMarkupStripper : NSObject <NSXMLParserDelegate>{
+#else
+    @interface XMarkupStripper : NSObject{
+#endif
+    @private
+        NSMutableArray* _strings;
+    }
+
+// Strips markup from the given string and returns the result
+    -(NSString*)parse:(NSString*)string;
 
 @end
+

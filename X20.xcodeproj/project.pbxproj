@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188B3D951688959700FB5C16 /* XEntityTables.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B3D941688959700FB5C16 /* XEntityTables.m */; };
 		189C11AC163B8E53009120B8 /* XGlobalCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C11AB163B8E53009120B8 /* XGlobalCore.m */; };
 		189C11B0163BA089009120B8 /* X20.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C11AF163BA089009120B8 /* X20.m */; };
 		189C11B3163BA362009120B8 /* XGlobalCoreLocale.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C11B2163BA362009120B8 /* XGlobalCoreLocale.m */; };
@@ -48,6 +49,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		188B3D931688959700FB5C16 /* XEntityTables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XEntityTables.h; path = "XLib/XCore/Entity Tables/XEntityTables.h"; sourceTree = "<group>"; };
+		188B3D941688959700FB5C16 /* XEntityTables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XEntityTables.m; path = "XLib/XCore/Entity Tables/XEntityTables.m"; sourceTree = "<group>"; };
 		189C11AA163B8E53009120B8 /* XGlobalCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XGlobalCore.h; path = XLib/XCore/Global/XGlobalCore.h; sourceTree = "<group>"; };
 		189C11AB163B8E53009120B8 /* XGlobalCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XGlobalCore.m; path = XLib/XCore/Global/XGlobalCore.m; sourceTree = "<group>"; };
 		189C11AE163BA089009120B8 /* X20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = X20.h; path = XLib/XCore/Global/X20.h; sourceTree = "<group>"; };
@@ -140,6 +143,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		188B3D911688921900FB5C16 /* Entity Tables */ = {
+			isa = PBXGroup;
+			children = (
+				188B3D931688959700FB5C16 /* XEntityTables.h */,
+				188B3D941688959700FB5C16 /* XEntityTables.m */,
+			);
+			name = "Entity Tables";
+			sourceTree = "<group>";
+		};
 		189C11B4163BA9F5009120B8 /* Debug */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +278,7 @@
 		18AEFF7A1635A003005EF160 /* XCore */ = {
 			isa = PBXGroup;
 			children = (
+				188B3D911688921900FB5C16 /* Entity Tables */,
 				2EAA3C541683397F00B5CDD2 /* Classes */,
 				18A21F041642CB74004C93DF /* Additions */,
 				189C11B4163BA9F5009120B8 /* Debug */,
@@ -450,6 +463,7 @@
 				2EA2768D166398440024F353 /* NSMutableDictionaryAdditions.m in Sources */,
 				18C97540167DC15E0013467C /* NSStringAdditions.m in Sources */,
 				2E67D50916833BDD0047EECF /* XMarkupStripper.m in Sources */,
+				188B3D951688959700FB5C16 /* XEntityTables.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
