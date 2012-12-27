@@ -7,64 +7,43 @@
 //
 
 #import "NSStringAdditions.h"
-#import "XCorePreprocessorMacros.h"
-//#import "XMarkupStripper.h"
 
-@implementation NSStringAdditions
+#import "XCorePreprocessorMacros.h"
+#import "XMarkupStripper.h"
+#import "NSDataAdditions.h"
+
+X_FIX_CATEGORY_BUG(NSStringAdditions)
+
+@implementation NSString (XAdditions)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+- (BOOL)isWhitespaceAndNewlines
+{
+    NSCharacterSet* whitespace = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    for (NSInteger i = 0; i < self.length; i++) {
+        unichar c = [self characterAtIndex:i];
+        if(![whitespace characterIsMember:c])
+            return NO;
+    }
+    return YES;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+- (BOOL)isEmptyOrWhitespace
+{
+    // A nil or NULL string is not the same as an empty string
+    return 0 == self.length || ![self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].length;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+- (NSString*)stringByRemovingHTMLTags
+{
+    XMarkupStripper* stripper = [[[XMarkupStripper alloc] init] autorelease];
+    return [stripper parse:self];
+}
 
 @end
 
-
-//#import "Three20Core/NSStringAdditions.h"
-//
-//// Core
-//#import "Three20Core/TTCorePreprocessorMacros.h"
-//#import "Three20Core/TTMarkupStripper.h"
-//#import "Three20Core/NSDataAdditions.h"
-//
-//
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-///**
-// * Additions.
-// */
-//TT_FIX_CATEGORY_BUG(NSStringAdditions)
-//
-//@implementation NSString (TTAdditions)
-//
-//
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-//- (BOOL)isWhitespaceAndNewlines {
-//    NSCharacterSet* whitespace = [NSCharacterSet whitespaceAndNewlineCharacterSet];
-//    for (NSInteger i = 0; i < self.length; ++i) {
-//        unichar c = [self characterAtIndex:i];
-//        if (![whitespace characterIsMember:c]) {
-//            return NO;
-//        }
-//    }
-//    return YES;
-//}
-//
-//
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-///**
-// * Deprecated - https://github.com/facebook/three20/issues/367
-// */
-//- (BOOL)isEmptyOrWhitespace {
-//    // A nil or NULL string is not the same as an empty string
-//    return 0 == self.length ||
-//    ![self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]].length;
-//}
-//
-//
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-//- (NSString*)stringByRemovingHTMLTags {
-//    TTMarkupStripper* stripper = [[[TTMarkupStripper alloc] init] autorelease];
-//    return [stripper parse:self];
-//}
-//
-//
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 ///**
 // * Copied and pasted from http://www.mail-archive.com/cocoa-dev@lists.apple.com/msg28175.html
