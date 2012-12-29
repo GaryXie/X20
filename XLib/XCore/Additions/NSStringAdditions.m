@@ -42,34 +42,47 @@ X_FIX_CATEGORY_BUG(NSStringAdditions)
     return [stripper parse:self];
 }
 
-@end
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
 ///**
 // * Copied and pasted from http://www.mail-archive.com/cocoa-dev@lists.apple.com/msg28175.html
 // * Deprecated
 // */
-//- (NSDictionary*)queryDictionaryUsingEncoding:(NSStringEncoding)encoding {
-//    NSCharacterSet* delimiterSet = [NSCharacterSet characterSetWithCharactersInString:@"&;"];
-//    NSMutableDictionary* pairs = [NSMutableDictionary dictionary];
-//    NSScanner* scanner = [[[NSScanner alloc] initWithString:self] autorelease];
-//    while (![scanner isAtEnd]) {
-//        NSString* pairString = nil;
-//        [scanner scanUpToCharactersFromSet:delimiterSet intoString:&pairString];
-//        [scanner scanCharactersFromSet:delimiterSet intoString:NULL];
-//        NSArray* kvPair = [pairString componentsSeparatedByString:@"="];
-//        if (kvPair.count == 2) {
-//            NSString* key = [[kvPair objectAtIndex:0]
-//                             stringByReplacingPercentEscapesUsingEncoding:encoding];
-//            NSString* value = [[kvPair objectAtIndex:1]
-//                               stringByReplacingPercentEscapesUsingEncoding:encoding];
-//            [pairs setObject:value forKey:key];
-//        }
-//    }
-//    
-//    return [NSDictionary dictionaryWithDictionary:pairs];
-//}
-//
+- (NSDictionary*)queryDictionaryUsingEncoding:(NSStringEncoding)encoding
+{
+    NSCharacterSet* delimiterSet = [NSCharacterSet characterSetWithCharactersInString:@"&;"];
+    NSMutableDictionary* pairs = [NSMutableDictionary dictionary];
+    NSScanner* scanner = [[[NSScanner alloc] initWithString:self] autorelease];
+    
+    while (![scanner isAtEnd])
+    {
+        NSString* pairString = nil;
+        [scanner scanUpToCharactersFromSet:delimiterSet intoString:&pairString];
+        [scanner scanCharactersFromSet:delimiterSet intoString:NULL];
+        NSArray* kvPair = [pairString componentsSeparatedByString:@"="];
+        if(2 == kvPair.count)
+        {
+            NSString* key = [[kvPair objectAtIndex:0] stringByReplacingPercentEscapesUsingEncoding:encoding];
+            NSString* value = [[kvPair objectAtIndex:1] stringByReplacingPercentEscapesUsingEncoding:encoding];
+            [pairs setObject:value forKey:key];
+        }
+    }
+    
+    return [NSDictionary dictionaryWithDictionary:pairs];
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (NSDictionary*)queryContentsUsingEncoding:(NSStringEncoding)encoding
+{
+    NSCharacterSet* delimiterSet = [NSCharacterSet characterSetWithCharactersInString:@"&;"];
+    NSMutableDictionary* pairs = [NSMutableDictionary dictionary];
+    NSScanner* scanner = [[[NSScanner alloc] initWithString:self] autorelease];
+    
+
+}
+
+@end
+
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //- (NSDictionary*)queryContentsUsingEncoding:(NSStringEncoding)encoding {
 //    NSCharacterSet* delimiterSet = [NSCharacterSet characterSetWithCharactersInString:@"&;"];
